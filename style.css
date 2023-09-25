@@ -33,6 +33,17 @@
     transform: translateY(-20px) translateX(-50px);
 }
 
+.bottom-roots { /*4.html*/
+    position: fixed;
+    bottom: 0px;
+    width: 1000px;
+    text-align: center;
+    rotate: 180deg;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-450px);
+}
+
 .container4-img{
     width: 1000px;
     margin-left: auto;
@@ -100,6 +111,10 @@ a{
   height: 150px;
 }
 
+#bugs img:hover{
+  rotate: 20deg;
+}
+
 #foundation{
   height: 100px;
   width: 700px;
@@ -112,4 +127,15 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
+
+#stores{
+  text-align: center;
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  width: 100px;
+}
+
+
+
 
