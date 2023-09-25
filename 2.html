@@ -10,7 +10,7 @@
   <body>
     <img id="icon" src="photos/not-scared-man.png"/>
     <div class="speech-bubble">
-      <p>This is kinda nice</p>
+      <p id="micro_info">Microbial Decomposers (bacteria and fungi) reside in rotting wood</p>
     </div>
 
 
@@ -20,7 +20,7 @@
       <img style="width: 100px; height: 100px;" src="photos/stump2.png"/>
       <br><br><br><br><br>
        
-      <div id="cell">
+      <div id="cell" onmouseenter="cell()" onmouseleave="idle2()">
        <img src="photos/clouds1.jpeg"/>
        <img src="photos/cellulolytic-bacteria.jpeg"/>
        <img src="photos/clouds2.png"/>
@@ -28,7 +28,7 @@
 
       <br><br><br>
 
-      <div id="crassa">
+      <div id="crassa" onmouseenter="crassa()" onmouseleave="idle()">
        <img src="photos/purple-flower.jpeg"/>
        <img src="photos/phlebiopsis-crassa.jpeg"/>
        <img src="photos/purple-flower2.jpeg"/>
@@ -36,7 +36,7 @@
 
       <br><br><br>
 
-      <div id="myce">
+      <div id="myce" onmouseenter="myce()" onmouseleave="idle()">
        <img src="photos/mycelium2.png"/>
        <img src="photos/mycelium1.jpeg"/>
        <img src="photos/nervous.jpeg"/>
@@ -46,11 +46,30 @@
 
       <a href="3.html"><img style="width: 150px; height: 150px;" src="photos/home.gif"/></a>
 
-      <p style="width: 300px; margin-left: auto; margin-right: auto;">A rotten tree stump is home to many kinds of microbial decomposers (bacteria and fungi). <br>Who else lives in this home?</p>
+      <p style="width: 230px; margin-left: auto; margin-right: auto;">For these microbial decomposers, the rotting tree stump is home. <br>Who else lives in this home?</p>
       
       <br><br><br>
 
     </div>
+
+    <script type="text/javascript">
+      function cell () {
+        document.getElementById('micro_info').innerHTML = "Cellulolytic bacteria plays an important role in role in the structural changes of rotting wood. It also looks kinda like lovely clouds."
+      }
+      function crassa () {
+        document.getElementById('micro_info').innerHTML = "Phlebiopsis crassa is a crust-like, wood-decomposing fungus, of a beautiful purple shade."
+      }
+      function myce () {
+        document.getElementById('micro_info').innerHTML = "Mycelium is another decomposing fungus found on and around rotting wood. Mycelial mats have been suggested as having potential as biological filters, removing chemicals and microorganisms from soil and water."
+      }
+      function idle(){
+        document.getElementById('micro_info').innerHTML = "These are kinda beautiful."
+      }
+      function idle2(){
+        document.getElementById('micro_info').innerHTML = "Microbial Decomposers (bacteria and fungi) reside in rotting wood"
+      }
+
+    </script>
 
 
   </body>
